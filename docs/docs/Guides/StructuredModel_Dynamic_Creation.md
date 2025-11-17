@@ -400,15 +400,9 @@ result = person1.compare_with(person2)
 print(f"Similarity: {result['overall_score']:.3f}")
 ```
 
-<<<<<<< HEAD
-### Custom Configuration Schema
-
-#### Top-Level Configuration
-=======
 ## Configuration Schema
 
 ### Top-Level Configuration
->>>>>>> main
 
 ```json
 {
@@ -420,13 +414,9 @@ print(f"Similarity: {result['overall_score']:.3f}")
 }
 ```
 
-<<<<<<< HEAD
-#### Primitive Field Configuration
-=======
 ### Field Configuration
 
 #### Primitive Fields
->>>>>>> main
 
 ```json
 {
@@ -543,21 +533,12 @@ print(f"Similarity: {result['overall_score']:.3f}")
 }
 ```
 
-<<<<<<< HEAD
-### Nested Models with Custom Configuration
-
-#### Single Nested Model
-
-```python
-company_config = {
-=======
 ## Nested Model Examples
 
 ### Single Nested Model
 
 ```json
 {
->>>>>>> main
     "model_name": "Company",
     "fields": {
         "name": {
@@ -587,30 +568,12 @@ company_config = {
         }
     }
 }
-<<<<<<< HEAD
-
-Company = StructuredModel.model_from_json(company_config)
-
-# Use with JSON data
-company_json = {
-    "name": "TechCorp",
-    "ceo": {"name": "Alice Johnson", "salary": 250000.0}
-}
-company = Company(**company_json)
-```
-
-#### List of Nested Models
-
-```python
-company_config = {
-=======
 ```
 
 ### List of Nested Models
 
 ```json
 {
->>>>>>> main
     "model_name": "Company",
     "fields": {
         "name": {
@@ -646,21 +609,6 @@ company_config = {
         }
     }
 }
-<<<<<<< HEAD
-
-Company = StructuredModel.model_from_json(company_config)
-
-# Use with JSON data
-company_json = {
-    "name": "TechCorp",
-    "employees": [
-        {"name": "Bob Smith", "department": "Engineering", "salary": 85000.0},
-        {"name": "Carol Davis", "department": "Marketing", "salary": 70000.0}
-    ]
-}
-company = Company(**company_json)
-=======
->>>>>>> main
 ```
 
 ## Loading from JSON Files
@@ -896,68 +844,8 @@ except ValueError as e:
     print(f"Configuration error: {e}")
 ```
 
-<<<<<<< HEAD
-## Example Scripts
-
-Stickler includes complete working examples for both methods:
-
-### JSON Schema Examples
-
-**[`examples/scripts/json_schema_demo.py`](../examples/scripts/json_schema_demo.py)**
-
-Comprehensive examples showing:
-- Basic JSON Schema model creation
-- Nested objects and arrays
-- Custom `x-aws-stickler-*` extensions
-- Real-world API response schemas
-- Complete evaluation workflows
-
-Run it:
-```bash
-python examples/scripts/json_schema_demo.py
-```
-
-### Custom Configuration Examples
-
-**[`examples/scripts/model_from_json_demo.py`](../examples/scripts/model_from_json_demo.py)**
-
-Comprehensive examples showing:
-- Basic model creation from custom JSON
-- Nested StructuredModels
-- Lists of StructuredModels with Hungarian matching
-- Custom comparator configuration
-- Loading from JSON files
-
-Run it:
-```bash
-python examples/scripts/model_from_json_demo.py
-```
-
-### Complete JSON-to-Evaluation Workflow
-
-**[`examples/scripts/json_to_evaluation_demo.py`](../examples/scripts/json_to_evaluation_demo.py)**
-
-End-to-end example showing:
-- Loading model configuration from JSON
-- Loading test data from JSON
-- Creating models dynamically
-- Running evaluations
-- No Python object construction required
-
-Run it:
-```bash
-python examples/scripts/json_to_evaluation_demo.py
-```
-
-## See Also
-
-- [README: JSON Schema Extensions Reference](../README.md#json-schema-extensions-x-aws-stickler--complete-reference)
-- [StructuredModel Advanced Functionality](StructuredModel_Advanced_Functionality.md)
-- [Comparators Documentation](../src/stickler/comparators/Comparators.md)
-=======
 ## See Also
 
 - [StructuredModel Advanced Functionality](StructuredModel_Advanced_Functionality.md)
 - [Comparators Documentation](../src/stickler/comparators/Comparators.md)
 - [Examples](../examples/scripts/model_from_json_demo.py)
->>>>>>> main
