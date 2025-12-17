@@ -355,7 +355,6 @@ The `StructuredModel.model_from_json()` method allows you to:
 ## Basic Usage
 
 ### Simple Model Creation
->>>>>>> main
 
 ```python
 from stickler.structured_object_evaluator.models.structured_model import StructuredModel
